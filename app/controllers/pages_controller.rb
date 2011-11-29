@@ -1,9 +1,13 @@
 class PagesController < ApplicationController
   def home
-    @tiltle = 'Home'
+    @title = 'Home'
   end
 
   def contact
+      @title = 'Contact'
+  end
+  def signin
+      @title = 'signin'
   end
 
 end
