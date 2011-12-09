@@ -1,5 +1,6 @@
 Lab8::Application.routes.draw do
-   match '/home', :to => 'pages#home'
+  
+  root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/signin', :to => 'pages#signin'
 
