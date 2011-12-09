@@ -7,7 +7,7 @@ class PagesController < ApplicationController
       @title = 'Contact'
   end
   def signin
-      @title = 'signin'
+      @title = 'Signin'
   end
 
 end
