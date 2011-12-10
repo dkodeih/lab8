@@ -1,8 +1,11 @@
 Lab8::Application.routes.draw do
   
+  get "users/new"
+
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/signin', :to => 'pages#signin'
+  match '/signup', :to => 'users#new'
 
 
   # The priority is based upon order of creation:
