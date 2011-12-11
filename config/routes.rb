@@ -1,11 +1,15 @@
 Lab8::Application.routes.draw do
+  get "sessions/new"
+
     resources :users
+    resources :sessions, :only => [:new, :create, :destroy]
     
   get "users/new"
 
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
-  match '/signin', :to => 'pages#signin'
+  match '/signin', :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
   match '/signup', :to => 'users#new'
 
 
